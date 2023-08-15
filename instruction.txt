@@ -1,0 +1,10 @@
+Assignment: Please create a basic Next.js starter project and provide a detailed description of the folder structure used in the project.
+
+
+ 
+
+
+Submission Instruction :
+
+
+Please include the note.txt file in the repository and add the detailed description in this note.txt file. After that please submit the respective github repository link.

@@ -1,0 +1,47 @@
+In order to enable features like server-side rendering, dynamic imports, routing, and other features Next.js is a well-known framework for creating React apps that are rendered on the server, makes use of several npm packages.
+
+.next
+The Next.js framework automatically creates the .next folder during the build process. It includes a number of files and directories that are used to support Next.js application's functionality. It's crucial to remember that Next.js automatically creates and manages the contents of the .next folder. Typically, while developing, developer won't need to directly interface with this folder. Instead, concentrate on writing Next.js features, developing pages and writing React components.
+
+
+node_modules
+Folder where npm packages are installed. The node_modules subdirectory performs the same function in a Next.js project as it does in a Node.js project. After executing the npm install command, npm packages are installed in this directory. There are some additional issues about the file format and use of npm packages in the context of a Next.js project. The node_modules folder is an integral part of the build and development process for Next.js projects, as it ensures that the required dependencies are available to run and build the application.
+
+public
+The public folder is a unique directory used for serving static assets in a Next.js project. The public folder's contents are immediately made accessible at the application's root URL when create a Next.js application. This gives the ability to add resources like photos, fonts, and other static files that must be immediately accessed by the JavaScript code on the client side or rendered on the server. The primary purpose of the public folder is to host static assets that do not require server-side processing. These assets are directly accessible from the root URL of Next.js application, just like any other public-facing static assets in a web server. When execute next build or next export, any file or folder placed in the public directory is automatically copied to the build output. Relative URLs beginning with '/' can be used in programme to retrieve these files.
+
+src 
+The src directory is not a default or predefined directory in a Next.js project. Next.js does not prescribe any particular folder layout or naming standards, including a src directory, in contrast to some other frontend frameworks or build tools. Instead, Next.js has a flexible approach that lets developers arrange their code according to the needs of their particular projects.
+However, a lot of programmers opt to store the Next.js application's source code in a src directory. It's a widely used convention that was taken from other frameworks, where src usually means "source."
+
+app 
+Version 13 of Next.js added a new feature known as the app directory. It offers a method for creating apps that take advantage of the newest React features, including server components, layouts, and error components. The app directory functions in conjunction with the pages directory. It's more efficient. The app directory uses server components to render pages on the server, which can improve performance. The app directory allows to use layouts and error components, which can give more control over the look and feel of application. The app directory is built on top of React 18, which is the latest version of React. This means that future-proofing application by using the latest features of React. Using the app directory is the most efficient and flexible way to build applications with Next.js.
+
+.gitignore
+A text file called the .gitignore file instructs Git which files and directories to ignore when tracking project changes. For Next.js project, it's a good idea to establish a .gitignore file to prevent tracking pointless files and directories. This helps the file to specify which files and folders should be ignored by Git.
+
+package.json
+The package.json file is a file that describes your Next.js project. It contains information about the project's dependencies, scripts, and other metadata. Any Node.js project including Next.js applications must include the package.json file. It is a JSON (JavaScript Object Notation) file that includes the list of dependencies needed to build and operate the application as well as metadata and configuration details about the project.
+
+.eslintrc.json
+In a Next.js project the .eslintrc file is used to configure ESLint, a popular JavaScript linter. ESLint helps maintain code quality and enforce consistent coding styles across the project. It identifies and reports patterns in code that may be errors or may not adhere to the defined coding standards.
+
+jsconfig.json
+The jsconfig.json file is a configuration file for TypeScript and JavaScript projects. It is used to define the compiler options that will be used to compile your code. The jsconfig.json file is a JSON file, which means that it is a text file that follows the JSON syntax.
+
+next.config.js
+The next.config.js file which is part of a Next.js project is a powerful configuration file that use to extend and customise many features of Next.js application.  The next.config.js file gives the flexibility to modify Next.js behavior, optimize application, set environment variables and more.
+
+package-lock.json
+Auto-generated file that locks dependencies to specific versions. By using the npm install command to install the project's dependencies, npm (Node Package Manager) automatically creates the package-lock.json file for Next.js project. In order to ensure consistent installs across various contexts, it is used to lock the precise versions of the installed packages and their dependencies. In Next.js the package-lock.json file is especially important because it ensures that Next.js app will always work the same way, regardless of the environment in which it is deployed. This is because the package-lock.json file prevents from accidentally installing different versions of dependencies, which can lead to errors.
+
+README.md 
+A markdown file called README.md acts as the project's central resource for documentation and information in a Next.js project. It often includes all the crucial information developers and users need to know about the project, its goal, how to set it up, how to use it, and any other pertinent elements.
+
+
+layout.js 
+The layout.js file in Next.js is a React component that is used to define the shared layout for all pages in application. This can include things like the header, footer, and sidebar. If only have one layout for entire application it is possible to create a Custom App and wrap entire application with the layout. Since the <Layout /> component is re-used when changing pages, its component state will be preserved (e.g. input values).
+
+page.js
+In Next.js, a page is a React Component exported from a .js, .jsx, .ts, or .tsx file in the pages directory. Each page is associated with a route based on its file name. The page.js file is a powerful tool that can help to build dynamic and interactive web pages. By using the page.js file can easily define the content and layout of pages as well as the routing for application.
+
